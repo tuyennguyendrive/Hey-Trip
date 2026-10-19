@@ -31,3 +31,14 @@ Truy cập `http://localhost:3000`.
 ## Giới hạn MVP / an toàn
 
 **Chưa có đăng nhập hoặc phân quyền.** Mọi người truy cập được URL đều có thể đọc, sửa và xóa toàn bộ dữ liệu. Chỉ sử dụng để demo riêng tư, không đưa dữ liệu thật lên một trang công khai. Cần bổ sung xác thực, phân quyền và sao lưu trước khi dùng nhiều người. Không bao gồm AI, thời tiết, bản đồ, chia sẻ nhóm.
+
+## Dynamic Travel Theme (bản cập nhật)
+
+- 4 nền phong cảnh SVG được lưu tại `public/assets/`: biển xanh, núi rừng, phố cổ, núi tuyết. Không cần tải ảnh từ website bên ngoài.
+- `public/theme.js` chọn ngẫu nhiên một chủ đề khi tải trang, cố gắng tránh trùng chủ đề của lần mở trước trong cùng tab.
+- Hiệu ứng parallax nhẹ theo chuột trên máy tính, tự tắt khi thiết bị yêu cầu giảm chuyển động.
+- Không thay đổi API, dữ liệu SQLite hoặc chức năng hiện có.
+
+### Cập nhật GitHub
+
+Thay `public/index.html`, `public/style.css`; thêm `public/theme.js` và cả thư mục `public/assets`. Không cần thay `server.js`, `package.json` hoặc thư mục `data`.
